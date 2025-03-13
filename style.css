@@ -1,0 +1,283 @@
+:root {
+  --primary-blue: #1e88e5;
+  --secondary-teal: #00acc1;
+  --background-light: #f5f5f5;
+  --text-dark: #263238;
+}
+
+.top-bar {
+  position: fixed; /* Fix the top bar */
+  top: 0; /* Position at the top of the page */
+  left: 0; /* Align to the left edge */
+  width: 98%; /* Full width */
+
+  display: flex;
+  justify-content: space-between; /* Push logo to left and nav to right */
+  align-items: center; /* Vertically center items */
+  padding: 1rem 2rem; /* Add some padding */
+  background-color: white; /* Background color for the top bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+}
+
+.logo img {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #263238; /* Dark gray text */
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: #263238; /* Dark gray text */
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #1e88e5; /* MLH-themed blue */
+  color: white;
+}
+
+.nav-links a:active {
+  transform: scale(0.95); /* Slight click effect */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  padding-top: 70px; /* Adjust based on the height of your top bar */
+}
+
+.hero {
+  background: linear-gradient(
+    to right,
+    var(--primary-blue),
+    var(--secondary-teal)
+  );
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem; /* Comfortable padding */
+  font-size: 1rem;
+  font-weight: 600;
+  color: white; /* High-contrast text color */
+  background-color: #1565c0; /* Darker blue for better contrast */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: linear-gradient(45deg, #1565c0, #1e88e5);
+}
+
+.cta-button:hover {
+  background-color: #0d47a1; /* Even darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  background: linear-gradient(45deg, #0d47a1, #1565c0);
+}
+
+.cta-button:focus {
+  outline: 3px solid #ffd700; /* Gold outline for focus */
+  outline-offset: 2px; /* Space between button and outline */
+  background-color: #0d47a1; /* Darker blue for focus */
+}
+
+.cta-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.learning-paths {
+  padding: 2rem;
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.path-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.path-card:hover {
+  transform: translateY(-5px);
+}
+
+.start-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem; /* Slightly smaller padding */
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white; /* High-contrast text color */
+  background-color: #1e88e5; /* MLH-themed blue */
+  border: none;
+  border-radius: 20px; /* Slightly rounded corners */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: linear-gradient(45deg, #1e88e5, #42a5f5);
+}
+
+.start-button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  background: linear-gradient(45deg, #1565c0, #1e88e5);
+}
+
+.start-button:focus {
+  outline: 3px solid #ffd700; /* Gold outline for focus */
+  outline-offset: 2px; /* Space between button and outline */
+  background-color: #1565c0; /* Darker blue for focus */
+}
+
+.start-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.progress-tracker {
+  text-align: center;
+  padding: 2rem;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-blue);
+  border-radius: 10px;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  text-align: center;
+}
+
+.mlh-section {
+  background: var(--primary-blue);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mlh-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white; /* High-contrast text color */
+  background-color: #263238; /* MLH-themed purple */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.mlh-button:hover {
+  background-color: #4a2a6b; /* Darker purple on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.mlh-button:focus {
+  outline: 3px solid #ffd700; /* Gold outline for focus */
+  outline-offset: 2px; /* Space between button and outline */
+  background-color: #4a2a6b; /* Darker purple for focus */
+}
+
+.mlh-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--text-dark);
+  color: white;
+}
+
+footer {
+  background-color: #fff; /* MLH-themed blue */
+  color: #1e88e5;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 80px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* filter: brightness(0) invert(1); Make logo white */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
