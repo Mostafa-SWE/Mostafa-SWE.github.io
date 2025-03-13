@@ -27,17 +27,6 @@ A modern, interactive static website built for the **MLH Global Hack Week Cloud 
 
 ---
 
-## 📂 Project Structure
-
-CloudForge/
-├── index.html # Main HTML file
-├── style.css # Main CSS file
-├── assets/ # Static assets
-│ ├── images/ # Images and logos
-│ ├── icons/ # Icons
-├── README.md # Project documentation
-
----
 
 ## 🚀 Getting Started
 
@@ -63,26 +52,26 @@ Running Locally
 
 ### Customizing
 
-Update index.html to modify content.
+- Update index.html to modify content.
 
-Edit style.css to change styles.
+- Edit style.css to change styles.
 
-Add new images to assets/images/.
+- Add new images to assets/images/.
 
 ### 🌟 Why This Project?
 
 This project is part of my journey to join the MLH Fellowship Program. It demonstrates my skills in:
 
-Building responsive, accessible websites.
+* Building responsive, accessible websites.
 
-Using Git and GitHub for version control.
+* Using Git and GitHub for version control.
 
-Deploying static sites to GitHub Pages.
+* Deploying static sites to GitHub Pages.
 
 ### Acknowledgments
 
-Major League Hacking (MLH) for organizing the Global Hack Week Cloud Hackathon.
++ Major League Hacking (MLH) for organizing the Global Hack Week Cloud Hackathon.
 
-GitHub for providing free hosting via GitHub Pages.
++ GitHub for providing free hosting via GitHub Pages.
 
-Open Source Community for inspiration and resources.
++ Open Source Community for inspiration and resources.
