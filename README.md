@@ -6,7 +6,7 @@ A modern, interactive static website built for the **MLH Global Hack Week Cloud 
 
 ## 🚀 Live Demo
 
-[View the live site](https://Mostafa-SWE.github.io)
+[View the live site](https://nassar-dev.github.io)
 
 ---
 
@@ -38,7 +38,7 @@ A modern, interactive static website built for the **MLH Global Hack Week Cloud 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-username.github.io.git
+   git clone https://github.com/nassar-dev/nassar-dev.github.io.git
    ```
 2. Open index.html in your browser.
 
